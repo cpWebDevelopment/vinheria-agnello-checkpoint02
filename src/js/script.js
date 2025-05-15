@@ -102,3 +102,10 @@ do {
     continuar = prompt("Deseja cadastrar outro vinho? (s/n)");
 } while (continuar == "s");
 
+// Apresentação final, contendo quantidade de vinhos cadastrados, com estoque baixo e mais antigo
+alert("Visualize o console para verificar os vinhos cadastrados, quantidade de vinhos, quantos estão em estoque baixo e qual rótulo é o mais antigo")
+console.log("===========================================")
+console.log("==== Resumo do cadastro ====");
+console.log(`Foram cadastrados ${totalCadastros} vinhos`)
+console.log(`${totalEstoqueBaixo} vinhos tem estoque baixo`)
+console.log(`O vinho com a safra mais antiga é ${vinhoMaisAntigo} de ${safraMaisAntiga}`)
