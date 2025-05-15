@@ -22,3 +22,17 @@ function estoqueBaixo(quantidade){
 
     return statusEstoque;
 }
+
+// Classificar o vinho (antigo, amadurecido, jovem)
+function classificarVinho(safra){
+    let maturacao;
+    if (parseInt(safra) < 2015) {
+        maturacao = "Vinho antigo";
+    } else if (parseInt(safra) <= 2019) {
+        maturacao = "Vinho amadurecido";
+    } else {
+        maturacao = "Vinho jovem";
+    }
+
+    return maturacao;
+}
