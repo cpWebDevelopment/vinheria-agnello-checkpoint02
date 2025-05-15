@@ -11,4 +11,4 @@
 
 ### Link do GitHub Pages:
 
--> 
+-> https://cpwebdevelopment.github.io/vinheria-agnello-checkpoint02/
