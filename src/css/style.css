@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #cac3c3;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    background: linear-gradient(to left, #42140a, #270d08, #1f0705); 
+    color:#e0d8d8;
+    padding: 20px;
+}
+
+header nav ul{
+    list-style: none;
+    padding: 0;
+             /*top,bottom E right e left*/
+    margin: 10px 0;
+    display: flex;
+}
+
+header nav ul li a{
+    color:#dee0ec;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+header nav ul li a:hover{
+    text-decoration: underline 5px #692612;
+}
+
+#descricao{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+.descricao2{
+    color:#0a1342;
+}
+.descricao2 h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.descricao2 p{
+    font-size: 1.2rem;
+}
+
+#conteudo{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.produto{
+    width: 200px;
+    height: 400px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #6e240d;
+    color:#dee0ec;
+    border-radius: 30px;
+}
+
+.produto img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.preco{
+    font-weight: 800;
+    margin-top: 50px;
+    color:#dee0ec;
+    font-size: 1.5rem;
+}
+button{
+    background: #d1613f;
+    margin-top: 30px;
+    padding: 15px 45px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+button:hover{
+    background: #3f1306;
+    color:#fff;
+}
+aside{
+    width: 200px;
+    background: #c5bcbc;
+    padding: 20px 0;
+}
+
+footer{
+    background: linear-gradient(to left, #42140a, #270d08, #1f0705); 
+    color:#fff;
+    padding: 20px 0;
+    margin-top: auto;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.footer-content h3{
+    margin-bottom: 30px;
+}
+.footer-content ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-content li{
+    margin-bottom: 5px;
+}
+.footer-content a{
+    color:#fff;
+    text-decoration: none;
+}
+
+@media(max-width:768px){
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    header nav ul li{
+        margin: 0;
+    }
+    #conteudo{
+        grid-template-columns: 1fr;
+    }
+    aside{
+        display: none;
+    }
+}
