@@ -36,3 +36,16 @@ function classificarVinho(safra){
 
     return maturacao;
 }
+
+// Mostrar ficha técnica do vinho cadastrado
+function mostrarDados(nome, tipo, safra, quantidade, estoque, sazonamento, indice){
+    alert("A seguir, veja a ficha técnica do vinho no console.");
+    console.log("===========================================");
+    console.log("==== Ficha Técnica do Vinho Cadastrado ====");
+    console.log(`Nome do vinho ${indice}: ${nome}`);
+    console.log(`Tipo do vinho ${indice}: ${tipo}`);
+    console.log(`Ano da safra do vinho ${indice}: ${safra}`);
+    console.log(`Quantidade em estoque do vinho ${indice}: ${quantidade}`);
+    console.log(`Status do estoque do vinho ${indice}: ${estoque}`);
+    console.log(`Estágio de maturação do vinho ${indice}: ${sazonamento}`);
+}
